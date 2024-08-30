@@ -7,7 +7,6 @@
   </head>
   <style>
     table {
-      width: 100%;
       border-collapse: collapse;
     }
     th,
@@ -26,10 +25,12 @@
     </header>
 
     <section class="content">
-      <p>
-        Este documento HTML tiene una estructura básica que incluye la
-        declaración DOCTYPE, etiquetas de metadato y título.
-      </p>
+      <div>
+        <p>
+          Este documento HTML tiene una estructura básica que incluye la
+          declaración DOCTYPE, etiquetas de metadato y título.
+        </p>
+      </div>
     </section>
 
     <section class="content">
@@ -98,10 +99,32 @@
       </figure>
     </section>
 
+    <section id="tabla" class="table">
+      <h2>6. Tablas</h2>
+      <table style="border: 1px;">
+        <thead>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+          </tr>
+          <tr>
+            <td>Dato 3</td>
+            <td>Dato 4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
     <section id="formulario" class="content">
-      <h2>6. Formulario</h2>
+      <h2>7. Formulario</h2>
       <div class="form-container">
-        <form method="post" action="/enviarform">
+        <form>
           <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input id="nombre" name="nombre" type="text" required />
